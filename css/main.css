@@ -428,8 +428,6 @@ strong {
     height: 19px;
   }
   .gallery__swiper-pagination {
-    width: -moz-max-content;
-    width: max-content;
     display: flex;
     justify-content: space-between;
     gap: 20px;
