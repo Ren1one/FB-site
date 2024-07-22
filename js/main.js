@@ -12,8 +12,8 @@ const swiper = new Swiper('.swiper', {
                 type: "bullets",
             },
             navigation: {
-                nextEl: null,
-                prevEl: null,
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         },
         576: {
@@ -23,8 +23,8 @@ const swiper = new Swiper('.swiper', {
                 type: "bullets",
             },
             navigation: {
-                nextEl: null,
-                prevEl: null,
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         },
         768: {
