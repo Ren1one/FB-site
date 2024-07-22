@@ -296,8 +296,8 @@ strong {
 }
 .gallery__swiper-pagination {
   position: unset;
-  width: -moz-max-content;
-  width: max-content;
+  width: -moz-max-content !important;
+  width: max-content !important;
   text-align: right;
   font-family: Cormorant;
   font-size: 24px;
