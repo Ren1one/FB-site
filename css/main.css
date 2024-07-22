@@ -288,6 +288,7 @@ strong {
 .gallery__controlls {
   display: flex;
   justify-content: center;
+  -webkit-gap: 30px;
   gap: 30px;
   align-items: center;
 }
@@ -654,6 +655,7 @@ strong {
 @media (hover: hover) {
   .contact__form-input:hover {
     background: rgb(137, 157, 157);
+    outline: 1px solid rgb(255, 255, 255);
   }
   .contact__form-input:hover::-moz-placeholder {
     color: rgb(255, 255, 255);
