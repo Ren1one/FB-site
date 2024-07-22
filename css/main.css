@@ -174,10 +174,9 @@ strong {
     display: flex;
     justify-content: center;
     overflow: auto;
-    -webkit-scrollbar-width: none;
-    -moz-scrollbar-width: none;
-    -ms-scrollbar-width: none;
-    scrollbar-width: none;
+  }
+  .header__menu::-webkit-scrollbar {
+    display: none;
   }
 }
 @media (max-width: 510px) {
@@ -559,14 +558,13 @@ strong {
   .about__img {
     overflow: hidden;
     overflow-x: scroll;
-    -webkit-scrollbar-width: none;
-    -moz-scrollbar-width: none;
-    -ms-scrollbar-width: none;
-    scrollbar-width: none;
     justify-content: flex-start;
   }
   .about__img img {
     width: unset;
+  }
+  .about__img::-webkit-scrollbar {
+    display: none;
   }
   .about__hint {
     display: block;
@@ -638,6 +636,9 @@ strong {
   line-height: 22px;
   padding: 12px 16px;
   transition: background-color 0.3s;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .contact__form-input::-moz-placeholder {
   color: rgb(137, 157, 157);
