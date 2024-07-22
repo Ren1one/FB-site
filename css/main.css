@@ -288,9 +288,10 @@ strong {
 .gallery__controlls {
   display: flex;
   justify-content: center;
-  -webkit-gap: 30px;
   gap: 30px;
   align-items: center;
+  width: max-content;
+  margin: 0 auto;
 }
 .gallery__swiper-pagination {
   position: unset;
