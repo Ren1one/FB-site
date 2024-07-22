@@ -639,6 +639,7 @@ strong {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border-radius: 0;
 }
 .contact__form-input::-moz-placeholder {
   color: rgb(137, 157, 157);
