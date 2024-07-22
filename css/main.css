@@ -290,6 +290,9 @@ strong {
   justify-content: center;
   gap: 30px;
   align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
 }
 .gallery__swiper-pagination {
   position: unset;
