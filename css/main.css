@@ -268,6 +268,10 @@ strong {
   }
 }
 
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  width: unset !important;
+}
+
 .gallery {
   background: rgb(29, 47, 48);
 }
