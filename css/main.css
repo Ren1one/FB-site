@@ -188,7 +188,7 @@ strong {
 
 .hero {
   background-color: rgb(137, 157, 157);
-  background: url(../../img/hero-bg.jpg) no-repeat;
+  background: url(../img/hero-bg.webp) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -582,7 +582,7 @@ strong {
 
 .contact {
   background-color: rgb(137, 157, 157);
-  background: url(../../img/contacts-bg.png);
+  background: url(../img/contacts-bg.webp);
   background-position: center;
   background-size: cover;
 }
