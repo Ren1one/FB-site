@@ -187,8 +187,8 @@ strong {
 }
 
 .hero {
-  background: url(../../img/hero-bg.jpg) no-repeat;
   background-color: rgb(137, 157, 157);
+  background: url(../../img/hero-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -581,8 +581,8 @@ strong {
 }
 
 .contact {
-  background: url(../../img/contacts-bg.png);
   background-color: rgb(137, 157, 157);
+  background: url(../../img/contacts-bg.png);
   background-position: center;
   background-size: cover;
 }
