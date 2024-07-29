@@ -1,0 +1,123 @@
+.header {
+    height: 60px;
+    background: $background;
+
+
+    &__container{
+        height: 100%;
+        max-width: 1175px;
+        padding: 0 32px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+        gap: 125px;
+    }
+
+    &__items {
+        display: flex;
+        gap: 58px;
+    }
+
+    &__link {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        padding: 0 3px;
+        transition: color .3s;
+        text-wrap: nowrap;
+
+        &:focus-visible{
+            outline: 1px solid $green-focus;
+        }
+
+        @media (hover:hover){
+            &:hover{
+                color: $primary-green;
+            }
+        }
+
+        &:active {
+            color: $green-active;
+        }
+    }
+
+    &__right {
+        display: flex;
+        gap: 68px;
+    }
+
+    &__button-wrapper{
+        width: 27px;
+        height: 27px;
+    }
+
+    &__button {
+        display: block;
+        svg{
+            height: 100%;
+            width: 100%;
+            stroke: $primary-green;
+            transition: stroke .3s;
+        }
+
+
+        &:focus-visible{
+            svg{
+                outline: 1px solid $green-focus;
+                outline-offset: 3px;
+            }
+        }
+        
+        @media (hover:hover){
+            &:hover{
+                svg{
+                    stroke: $green-hover;
+                }
+            }
+        }
+
+        &:active{
+            svg{
+                stroke: $green-active;
+            }
+        }
+    }
+
+    @media (max-width:1024px){
+        &__left {
+            gap: 58px;
+        }
+        &__items {
+            gap: 32px;
+        }
+        &__right {
+            gap: 26px;
+        }
+    }
+    @media (max-width: 768px) {
+        &__menu{
+            position: absolute;
+            left: 0;
+            top: 75px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            overflow: auto;
+        }
+        &__menu::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    @media (max-width: 510px) {
+        &__menu{
+            padding: 0 32px;
+            justify-content: flex-start;
+        }
+    }
+}

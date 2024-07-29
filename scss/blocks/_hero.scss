@@ -1,0 +1,89 @@
+.hero {
+    background-color: $grey;
+    background: url(../img/hero-bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__container {
+        height: 100%;
+        max-width: 1175px;
+        margin: 0 auto;
+        padding: 115px 32px;
+    }
+
+    &__title {
+        max-width: 688px;
+        margin-bottom: 22px;  
+        font-family: Cormorant;
+        font-size: clamp(48px, 5vw + 1rem ,60px);
+        font-weight: 700;
+        line-height: 100%;
+    }
+
+    &__text {
+        max-width: 635px;
+        margin-bottom: 24px;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    &__link {
+        color: $primary-green;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        padding: 0 5px 0 5px;
+        margin-left: -5px;
+        transition: color 0.3s;
+
+        & svg{
+            margin-left: 5px;
+            fill: $primary-green;
+            transition: fill 0.3s;
+        }
+
+
+        &:focus-visible{
+            outline: 1px solid $green-focus;
+        }
+
+        @media (hover:hover){
+            &:hover{
+                color: $green-hover;
+                & svg {
+                    fill: $green-hover;
+                }
+            }
+        }
+
+        &:active {
+            color: $green-active;
+            & svg {
+                fill: $green-active;
+            }
+        }
+    }
+
+    @media (max-width:768px){
+        &__container{
+            padding: 70px 32px 30px;
+        }
+    }
+    
+    @media (max-width:532px){
+        background-position-x: 30%;
+    }
+
+    @media (max-width:425px){
+        background-size:cover;
+        &__title{
+            margin-bottom: 30px;
+        }
+        &__text{
+            display: none;
+        }
+    }
+}

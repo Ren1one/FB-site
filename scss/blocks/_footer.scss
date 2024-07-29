@@ -1,0 +1,61 @@
+.footer {
+
+    &__top {
+        background: $background-shade;
+        display: flex;
+        justify-content: center;
+        padding: 18px 0;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
+        align-items: center;
+    }
+
+    &__social-link {
+        display: block;
+
+        & svg {
+            fill: $grey;
+            transition: fill 0.3s;
+        }
+
+        &:focus-visible{
+            & svg {
+                outline: 1px solid $green-focus;
+                outline-offset: 4px;
+            }
+        }
+        
+        @media (hover:hover){
+            &:hover{
+                & svg {
+                    fill: $primary-green;
+                }
+            }
+        }
+
+        &:active{
+            & svg {
+                fill: $green-active;
+            }
+        }
+    }
+
+    &__bottom {
+        background-color: $background;
+        display: flex;
+        justify-content: center;
+        padding: 3px 0;
+    }
+
+    &__text {
+        color: $grey;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+}

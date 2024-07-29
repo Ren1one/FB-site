@@ -1,0 +1,138 @@
+.about {
+    background: $background;
+
+    &__container {
+        max-width: 1175px;
+        margin: 0 auto;
+        padding: 30px 32px 60px;
+    }
+
+    &__title {
+        font-family: Cormorant;
+        font-style: italic;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        background-color: $background-shade;
+
+        img{
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__hint{
+        display: none;
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        z-index: 3;
+
+        color: $grey;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px 16px 24px 16px;
+        max-width: 255px;
+        background: $primary-green;
+    }
+
+    &__info-title {
+        color: $background-shade;
+        font-family: Cormorant;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: 8px;
+    }
+
+    &__info-desc {
+        color: $green-text;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 25px;
+    }
+
+    &__info-link {
+        color: $black;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        padding: 0 5px 0 5px;
+        margin-left: -5px;
+        transition: color 0.3s;
+        width: max-content;
+
+        & svg{
+            margin-left: 5px;
+            fill: $black;
+            transition: fill 0.3s;
+        }
+
+        @media (hover:hover){
+            &:hover{
+                color: $green-active;
+                & svg {
+                    fill: $green-active;
+                }
+            }
+        }
+
+        &:focus-visible{
+            outline: 1px solid $green-focus;
+        }
+    }
+
+    @media (max-width:768px){
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__img{
+            overflow: hidden;
+            overflow-x: scroll;
+            justify-content: flex-start;
+
+            img {
+                width: unset;
+            }
+        }
+
+        &__img::-webkit-scrollbar{
+            display: none;
+        }
+
+        &__hint{
+            display: block;
+        }
+
+        &__info{
+            max-width: 100%;
+        }
+    }
+}
